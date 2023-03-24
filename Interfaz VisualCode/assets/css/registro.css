@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+:root {
+	--colorTextos: #4954567;
+}
+
+*,
+::before ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #0a1238;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.head {
+	display: flex;
+}
+.head img {
+	width: 45px;
+	height: 45px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.head label {
+	margin-left: 100px;
+	justify-content: center center;
+	color: #ffff;
+}
+
+.head p {
+	margin-top: 25px;
+	color: #ffff;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.nav {
+	margin-top: 10px;
+	margin-right: 15px;
+}
+
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 35px;
+	color: #ffff;
+}
+
+.nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.nav ul li {
+	margin-left: 20px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #ffff;
+	padding: 8px;
+}
+
+.nav ul li a:hover {
+	color: #0a1238;
+	border-radius: 5px;
+	padding: 8px;
+	background-color: #ffff;
+}
+
+/* //////////////////////////////////////// */
+body {
+	margin: 0%;
+	padding: 0%;
+	font-family: "Open Sans", sans-serif;
+	background-image: url(../img/Fondo.jpg);
+	background-size: cover;
+	overflow-x: hidden;
+}
+.body {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen {
+	display: flex;
+}
+
+.imagen img {
+	margin-left: 55px;
+	width: 100px;
+	height: 100px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 700;
+	margin-left: 50px;
+}
+
+form {
+	background: #ffff;
+	padding: 40px 0;
+	box-shadow: 0 0 6px 0 rgba(240, 227, 227, 0.8);
+	border-radius: 10px;
+	width: 400px;
+	margin-top: 150px;
+}
+
+.form {
+	width: 100%;
+	margin: auto;
+}
+
+form .grupo {
+	position: relative;
+	margin: 45px;
+	background: #0000;
+}
+
+input {
+	background: none;
+	color: #c6c6c6;
+	font-size: 18px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #495456;
+}
+
+input:focus {
+	outline: none;
+	color: #5e5d5d;
+}
+
+label {
+	color: #495456;
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	top: 10px;
+	transition: 0.5s ease-in-out all;
+	pointer-events: none;
+	font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+input:invalid ~ label {
+	top: -14px;
+	font-size: 14px;
+	color: #0a1238;
+	font-weight: bold;
+}
+.barra {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.barra::before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #2196f3;
+	transition: 0.2s ease-in-out all;
+	background-color: #0a1238;
+	transition: 0.3s ease width;
+	left: 0;
+}
+
+form p {
+	text-align: center;
+}
+
+form a{
+	text-decoration: none;
+}
+
+input:focus ~ .barra::before {
+	width: 100%;
+}
+
+button {
+	font-family: "Open Sans", sans-serif;
+	background-color: #0a1238;
+	border: none;
+	display: block;
+	width: 80%auto;
+	margin: 10px auto;
+	color: #ffff;
+	height: 40px;
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+footer {
+	background-color: #0a1238;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 5px;
+}
+.foot {
+	display: flex;
+}
+.foot img {
+	width: 75px;
+	height: 75px;
+	margin-left: 20px;
+}
+.foot label {
+	margin-left: 119px;
+	justify-content: center center;
+	color: #ffff;
+}
+
+.foot p {
+	margin-top: 34px;
+	color: #ffff;
+}
+
+.redes {
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.red {
+	width: 35px;
+	height: auto;
+	margin-left: 25px;
+	margin-top: 15px;
+}
+
+/* //////////////////////////////////////////////////////////////////Tamaño Celular///////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 767px) and (min-width: 230px) {
+	@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+	:root {
+		--colorTextos: #4954567;
+	}
+
+	*,
+	::before ::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	header {
+		background-color: #0a1238;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		display: flex;
+	}
+
+	.head {
+		display: flex;
+	}
+	.head img {
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		margin-top: 15px;
+	}
+	.head label {
+		margin-left: 100px;
+		justify-content: center center;
+		color: #ffff;
+	}
+
+	.head p {
+		margin-top: 17px;
+		color: #ffff;
+		font-weight: bold;
+		font-size: 15px;
+		margin-left: 10px;
+	}
+
+	.nav {
+		margin-top: 1px;
+		position: absolute;
+		left: 20%;
+	}
+
+	.link {
+		text-decoration: none;
+		font-weight: bold;
+		margin-left: 10px;
+		color: #ffff;
+		font-size: 15px;
+	}
+
+	.nav ul {
+		display: flex;
+		list-style: none;
+	}
+
+	.nav ul li {
+		margin-left: 20px;
+	}
+
+	.nav ul li a {
+		text-decoration: none;
+		color: #ffff;
+		padding: 5px;
+		font-size: 13px;
+	}
+
+	.nav ul li a:hover {
+		color: #0a1238;
+		border-radius: 5px;
+		padding: 5px;
+		background-color: #ffff;
+	}
+
+	/* //////////////////////////////////////// */
+	body {
+		margin: 0%;
+		padding: 0%;
+		font-family: "Open Sans", sans-serif;
+		background-image: url(../img/Fondo.jpg);
+		overflow-x: hidden;
+		height: 100%;
+		background-size: 500%;
+		background-repeat: no-repeat;
+	}
+	.body {
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.imagen {
+		display: flex;
+	}
+
+	.imagen img {
+		margin-left: 25px;
+		width: 40px;
+		height: 40px;
+		margin-top: -15px;
+	}
+
+	h1 {
+		margin-top: -20px;
+		text-align: center;
+		font-weight: 700;
+		margin-left: 70px;
+		font-size: 25px;
+	}
+
+	form {
+		background: #ffff;
+		padding: 40px 0;
+		box-shadow: 0 0 6px 0 rgba(240, 227, 227, 0.8);
+		border-radius: 10px;
+		width: 325px;
+		margin-top: 75px;
+		height: 400px;
+	}
+
+	.form {
+		width: 100%;
+		margin: auto;
+	}
+
+	form .grupo {
+		position: relative;
+		margin: 45px;
+		background: #0000;
+	}
+
+	input {
+		margin-top: -25px;
+		background: none;
+		color: #c6c6c6;
+		font-size: 18px;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #495456;
+	}
+
+	input:focus {
+		outline: none;
+		color: #5e5d5d;
+	}
+
+	label {
+		color: #495456;
+		font-size: 16px;
+		position: absolute;
+		bottom: 0;
+		left: 5px;
+		top: 10px;
+		transition: 0.5s ease-in-out all;
+		pointer-events: none;
+		font-weight: bold;
+	}
+
+	input:focus ~ label,
+	input:valid ~ label,
+	input:invalid ~ label {
+		top: -14px;
+		font-size: 14px;
+		color: #0a1238;
+		font-weight: bold;
+	}
+	.barra {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+
+	.barra::before {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #2196f3;
+		transition: 0.2s ease-in-out all;
+		background-color: #0a1238;
+		transition: 0.3s ease width;
+		left: 0;
+	}
+
+	form p {
+		text-align: center;
+	}
+
+	input:focus ~ .barra::before {
+		width: 100%;
+	}
+
+	button {
+		font-family: "Open Sans", sans-serif;
+		background-color: #0a1238;
+		border: none;
+		display: block;
+		margin-top: -25px;
+		width: 80%auto;
+		margin: -10px auto;
+		color: #ffff;
+		height: 40px;
+		font-size: 16px;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	footer {
+		background-color: #0a1238;
+		text-align: center;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		bottom: 0%;
+		align-self: flex-end;
+	}
+	.foot {
+		display: flex;
+	}
+	.foot img {
+		width: 50px;
+		height: 50px;
+		margin-left: 5px;
+	}
+	.foot label {
+		margin-left: 15%;
+		justify-content: center center;
+		color: #ffff;
+		font-size: 12px;
+	}
+
+	.foot p {
+		margin-top: 34px;
+		color: #ffff;
+		font-size: 10px;
+	}
+
+	.redes {
+		margin-top: 5px;
+	}
+
+	.red {
+		width: 25px;
+		height: auto;
+		margin-left: 8px;
+		margin-top: 15px;
+	}
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	:root {
+		--colorTextos: #4954567;
+	}
+
+	*,
+	::before ::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	header {
+		background-color: #0a1238;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.head {
+		display: flex;
+	}
+	.head img {
+		width: 45px;
+		height: 45px;
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+	.head label {
+		margin-left: 100px;
+		justify-content: center center;
+		color: #ffff;
+	}
+
+	.head p {
+		margin-top: 25px;
+		color: #ffff;
+		font-weight: bold;
+		font-size: 20px;
+		margin-left: 15px;
+	}
+
+	.nav {
+		margin-top: 10px;
+	}
+
+	.link {
+		text-decoration: none;
+		font-weight: bold;
+		margin-left: 15px;
+		color: #ffff;
+	}
+
+	.nav ul {
+		display: flex;
+		list-style: none;
+	}
+
+	.nav ul li {
+		margin-left: 20px;
+	}
+
+	.nav ul li a {
+		text-decoration: none;
+		color: #ffff;
+		padding: 8px;
+	}
+
+	.nav ul li a:hover {
+		color: #0a1238;
+		border-radius: 5px;
+		padding: 8px;
+		background-color: #ffff;
+	}
+
+	/* //////////////////////////////////////// */
+	body {
+		margin: 0%;
+		padding: 0%;
+		font-family: "Open Sans", sans-serif;
+		background-image: url(../img/Fondo.jpg);
+		background-size: 2000px;
+		overflow-x: hidden;
+	}
+	.body {
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.imagen {
+		display: flex;
+	}
+
+	.imagen img {
+		margin-left: 55px;
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		text-align: center;
+		font-weight: 700;
+		margin-left: 50px;
+	}
+
+	form {
+		background: #ffff;
+		padding: 40px 0;
+		box-shadow: 0 0 6px 0 rgba(240, 227, 227, 0.8);
+		border-radius: 10px;
+		width: 500px;
+		margin-top: 25%;
+	}
+
+	.form {
+		width: 100%;
+		margin: auto;
+	}
+
+	form .grupo {
+		position: relative;
+		margin: 45px;
+		background: #0000;
+	}
+
+	input {
+		background: none;
+		color: #c6c6c6;
+		font-size: 18px;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #495456;
+	}
+
+	input:focus {
+		outline: none;
+		color: #5e5d5d;
+	}
+
+	label {
+		color: #495456;
+		font-size: 16px;
+		position: absolute;
+		bottom: 0;
+		left: 5px;
+		top: 10px;
+		transition: 0.5s ease-in-out all;
+		pointer-events: none;
+		font-weight: bold;
+	}
+
+	input:focus ~ label,
+	input:valid ~ label,
+	input:invalid ~ label {
+		top: -14px;
+		font-size: 14px;
+		color: #0a1238;
+		font-weight: bold;
+	}
+	.barra {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+
+	.barra::before {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #2196f3;
+		transition: 0.2s ease-in-out all;
+		background-color: #0a1238;
+		transition: 0.3s ease width;
+		left: 0;
+	}
+
+	form p {
+		text-align: center;
+	}
+
+	input:focus ~ .barra::before {
+		width: 100%;
+	}
+
+	button {
+		font-family: "Open Sans", sans-serif;
+		background-color: #0a1238;
+		border: none;
+		display: block;
+		width: 80%auto;
+		margin: 10px auto;
+		color: #ffff;
+		height: 40px;
+		font-size: 16px;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	footer {
+		background-color: #0a1238;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.foot {
+		display: flex;
+	}
+	.foot img {
+		width: 75px;
+		height: 75px;
+		margin-left: 20px;
+	}
+	.foot label {
+		margin-left: 119px;
+		justify-content: center center;
+		color: #ffff;
+	}
+
+	.foot p {
+		margin-top: 34px;
+		color: #ffff;
+	}
+
+	.redes {
+		margin-top: 5px;
+	}
+
+	.red {
+		width: 35px;
+		height: auto;
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+}
