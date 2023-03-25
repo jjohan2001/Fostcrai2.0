@@ -1,10 +1,13 @@
 @import "compass/css3";
 
 /*------------------------------*/
+
 .container{
 	
 	border-radius: 20px 100px;
 	border: 2px solid #0a1238;
+	position: static;
+	
 }
 
 
@@ -12,6 +15,7 @@
 	background-color: #0a1238;
 	color: aliceblue;
 	text-align: left;
+	overflow: scroll;
 }
 
 .container h1{
@@ -157,4 +161,8 @@ footer {
 .foot p {
 	margin-top: 34px;
 	color: #ffff;
+}
+
+.btn {
+	color:#0a1238;
 }

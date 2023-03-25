@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/assets/css/inicio.sesion.css">
+</head>
+
+<body>
+<br><br><br><br>
+    <header>
+		<div class="head">
+			<a href="/inicio.sesion.html"><img src="/assets/img/home.png" alt="" class="logoh"></a>
+			<p>volver</p>
+
+		</div>
+		<div class="nav">
+			<ul>
+				
+		</div>
+	</header>
+
+    <h1>Registro</h1>
+    <div class="container">
+        <div class="logo">
+            <img class="logo_img" src="/assets/img/logo_fostcrai.png" alt="">
+        </div>
+        <form action="" class="form" onsubmit="return validar()">
+            <div class="form__usuario">
+                <label for="" >Nombre</label>
+                <input type="text" class="usuario" required name="nombre">
+            </div>
+            <div class="form__usuario">
+                <label for="" >Apellido</label>
+                <input type="text" class="usuario" required name="apellido">
+            </div>
+            <div class="form__usuario">
+                <label for="" >Cedula</label>
+                <input type="number" class="usuario" minlength="7" maxlength="10" required name="cedula">
+            </div>
+            <div class="form__usuario">
+                <label for="" >Celular</label>
+                <input type="number" class="usuario" min="7" max="10" required name="celular">
+            </div>
+            <div class="form__usuario">
+                <label for="" >Direccion</label>
+                <input type="text" class="usuario" required name="direccion">
+            </div>
+            <div class="form__usuario">
+                <label for="" >Correo</label>
+                <input type="email" class="usuario" required name="correo">
+            </div>
+            <div class="form__clave" onsubmit="return validar()">
+                <label for="">Contraseña</label>
+                <input id="clave" type="password" class="clave" name="password">
+                <span id="ver" class="ver_clave"><i id="icono" class="fas fa-eye"></i></span>
+            </div>
+            <div class="form__boton" onsubmit="return validar()">
+                <button class="boton">Ingresar</button>
+                <div class="form__boton">
+                    <button class="boton">¿Olvido su contraseña?</button>
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+
+  
+
+
+    <script src="/modelo.php"></script>
+</body>
+
+</html>
